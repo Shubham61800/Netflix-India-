@@ -6,7 +6,6 @@
 }
 h1 {
   font-size: 41px;
-  font-weight: lighter;
 }
 h2 {
   font-size: 29px;
@@ -24,7 +23,6 @@ body {
   background-size: 100vw 693px;
   display: block;
   width: 100vw;
-  height: 693px;
 }
 .navbar {
   display: flex;
@@ -44,6 +42,16 @@ body {
   );
   width: 100vw;
   height: 693px;
+}
+#jod {
+  height: 2.7rem;
+  font-size: 17px;
+  width: 6rem;
+  text-align: center;
+  color: white;
+  background-color: #e50914;
+  border: 1px solid #e50914;
+  border-radius: 2px;
 }
 .nav-img {
   width: 196px;
@@ -83,12 +91,10 @@ body {
   color: white;
   margin: 6rem auto;
   width: 60vw;
-
   text-align: center;
 }
 .main-txt h2 {
   margin-top: 1rem;
-  font-weight: lighter;
 }
 
 .contact-heading h3 {
@@ -113,7 +119,7 @@ body {
   padding: 14px;
   font-size: 16px;
 }
-.next-button {
+.next-button{
   margin: 0;
   background-color: #e50914;
   border: 0px;
@@ -128,9 +134,7 @@ body {
 .video-card {
     margin: auto;
   z-index: 1;
-  /* top: 700px; */
   display: flex;
-  height: 484px;
   width: 95%;
   justify-content: space-between;
   align-items: center;
@@ -198,12 +202,13 @@ body {
   top: -358px;
   z-index: 0;
   width: 314px;
+  display:block;
 }
 .tvpile-img{
   z-index: 1;
 }
 .tvpile{
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -229,7 +234,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 60%;
-  margin: auto;
+  margin: 2px auto;
 }
 
 .scheme{
@@ -245,6 +250,9 @@ body {
   color: white;
   font-size: 48px;
   cursor: pointer;
+  background-color: #333;
+  border: none;
+  
 
 }
 .plans{
@@ -307,6 +315,9 @@ body {
   position: relative;
   left: 8rem;
 }
+.small{
+  display: flex;
+}
 .footer h3{
   font-size: 18px;
   color: #737373;
@@ -314,4 +325,363 @@ body {
   left: 8rem;
   margin-top: 2rem;
   padding-bottom: 20px;
+}
+@media only screen and (max-width:850px){
+  video{
+    display: inline-block;
+  }
+  body{
+    width: 100%;
+
+  }
+  .main-txt{
+    width: 100%;
+  }
+  .heading{
+    margin:auto;
+    width: 90%;
+  }
+  h1{
+    font-weight: lighter;
+    font-size: 50px;
+
+    text-align: center;
+    width:100%;
+  }
+  .contact-heading h3{
+    width: 80%;
+    font-size: 23px;
+    margin:  1rem auto;
+  }
+  .contact-form{
+    display: flex;
+    flex-direction: column;
+  }
+  #email-collect {
+    height: 2rem;
+    width: 53vw;
+    margin: 4px;
+    padding: 14px;
+    font-size: 16px;
+}
+.next-button {
+  margin: 0;
+  background-color: #e50914;
+  border: 0px;
+  color: white;
+  height: 3rem;
+  width: 16vw;
+  font-size: 20px;
+  border-radius: 5px;
+}
+  .gradient-nav {
+    display: block;
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient( 0deg, rgba(0, 0, 0, 0.8), transparent 60%, rgba(0, 0, 0, 0.8) );
+    width: 100%;
+    height: 693px;
+  }
+  .cards{
+    padding: 25px;
+    margin-top: 5px;
+  }
+  .video-card{
+    display: flex;
+    flex-direction: column;
+
+  }
+  .reverse{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .infos{
+    text-align: center;
+    margin:auto;
+  }
+  .box {
+    position: relative;
+    bottom: 60px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px;
+    width: 36vw;
+    height: 56px;
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+  .infos h1{
+    font-size: 40px;
+  }
+  .infos h2{
+    font-size: 20px;
+  }
+  .video img {
+    height: 387px;
+}
+  .tvpile{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .plans h1 {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 2rem;
+    padding-top: 3.5rem;
+  }
+  .container{
+    width: 80%;
+    margin: auto;
+  }
+  .ribon {
+    cursor: pointer;
+    display: flex;
+    max-width: 100%;
+    margin: 0;
+    text-align: center;
+    background-color: #333;
+    height: 2rem;
+    padding: 12px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.footer h3 {
+  font-size: 18px;
+  color: #737373;
+  position: relative;
+  left: 5rem;
+  margin-top: 2rem;
+  padding-bottom: 20px;
+}
+.drop-down {
+  color: white;
+  height: 2.8rem;
+  text-align: center;
+  width: 6rem;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-top: 1rem;
+  margin-right: 2rem;
+  position: relative;
+  left: 5rem;
+}
+.scheme {
+  width: 100%;
+  text-align: justify;
+  display: none;
+  background-color: #333;
+  padding: 12px;
+  margin: auto;
+  margin-top: 2px;
+}
+.boximg img{
+  height: 4rem;
+}
+}
+
+
+@media screen and (max-width:450px) {
+  body{
+    width: 100%; 
+  }
+  .nav-img {
+    width: 125px;
+}
+h1{
+  font-weight: bolder;
+}
+.right-nav{
+  display: flex;
+  margin-right: 1.5rem;
+}
+.lang{
+  display: none;
+}
+.main-txt h1{
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+.main-txt h2{
+  width:80%;
+  margin-top: 5px;
+  margin: auto;
+  text-align: center;
+  font-size: 18px;
+}
+.contact-heading h3{
+  width: 81%;
+  font-size: 18px;
+  margin: 1rem auto;
+}
+.infos{
+  width: 80vw;
+}
+.plans h1 {
+  text-align: center;
+  font-size: 21px;
+  margin-bottom: 2rem;
+  padding-top: 3.5rem;
+}
+#email-collect {
+  height: 2rem;
+  width: 75vw;
+  margin: 3px;
+  padding: 8px;
+  font-size: 16px;
+}
+.footer h3 {
+  font-size: 18px;
+  color: #737373;
+  position: relative;
+  left: 3rem;
+  margin-top: 2rem;
+  padding-bottom: 20px;
+}
+.contact-heading h3 {
+  width: 81%;
+  font-size: 16px;
+  margin: 1rem auto;
+}
+.ribon {
+  cursor: pointer;
+  display: flex;
+  max-width: 96%;
+  margin: 0;
+  text-align: center;
+  background-color: #333;
+  height: 2rem;
+  padding: 12px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.scheme {
+  width: 96%;
+  font-size: 16px;
+  text-align: justify;
+  display: none;
+  background-color: #333;
+  padding: 12px;
+  margin: auto;
+  margin-top: 2px;
+}
+.drop-down {
+    color: white;
+    height: 2.8rem;
+    text-align: center;
+    width: 6rem;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    position: relative;
+    left: 3rem;
+}
+.next-button {
+  margin: 0;
+  background-color: #e50914;
+  border: 0px;
+  color: white;
+  height: 3rem;
+  width: 36vw;
+  font-size: 18px;
+  border-radius: 5px;
+}
+.infos h1{
+  font-size: 1.4rem;
+}
+.infos h2{
+  width: 100%;
+  margin:auto
+}
+.right-nav{
+  padding: 0;
+}
+.lang {
+  color: white;
+  height: 1.8rem;
+  text-align: center;
+  width: 6rem;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 3px;
+  margin-right: 0px;
+}
+.ribon-h2{
+  font-size: 16px;
+}
+#jod {
+  height: 2.7rem;
+  font-size: 17px;
+  width: 6rem;
+  text-align: center;
+  color: white;
+  background-color: #e50914;
+  border: 1px solid #e50914;
+  border-radius: 2px;
+}
+.small-device{
+  height: 286px;
+}
+.tv-video {
+  position: relative;
+  top: -227px;
+  z-index: 0;
+  width: 279px;
+}
+.video img {
+  height: 285px;
+}
+.tvpile-video {
+  position: relative;
+  top: -260px;
+  z-index: 0;
+  width: 237px;
+  display: block;
+}
+
+.box {
+  position: relative;
+  bottom: 60px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 15px;
+  width: 224px;
+  height: 44px;
+  border: 2px solid #333;
+  border-radius: 15px;
+}
+.tv-video {
+  position: relative;
+  top: -184px;
+  z-index: 0;
+  width: 224px;
+}
+.video img {
+  height: 230px;
+}
+.boximg img {
+  height: 46px;
+  margin: 0;
+}
+.tvpile-video {
+  position: relative;
+  top: -202px;
+  z-index: 0;
+  width: 193px;
+  display: block;
+}
+.small{
+  display: flex;
+  flex-direction: column;
+}
 }
