@@ -118,6 +118,7 @@ body {
   margin: 0px;
   padding: 14px;
   font-size: 16px;
+  color: black;
 }
 .next-button{
   margin: 0;
@@ -247,13 +248,12 @@ body {
   margin-top: 2px;
 }
 .plus-icon{
+  margin-right: 5px;
   color: white;
   font-size: 48px;
   cursor: pointer;
   background-color: #333;
   border: none;
-  
-
 }
 .plans{
   background-color: black;
@@ -281,9 +281,9 @@ body {
   margin: auto;
   width: 80%;
 }
-.services{
+.services {
   margin: auto;
-  width: 80%;
+  width: 94%;
   display: flex;
   justify-content: space-between;
 }
@@ -317,6 +317,8 @@ body {
 }
 .small{
   display: flex;
+  width: 50%;
+  justify-content: space-around;
 }
 .footer h3{
   font-size: 18px;
@@ -363,6 +365,7 @@ body {
     margin: 4px;
     padding: 14px;
     font-size: 16px;
+    color: black;
 }
 .next-button {
   margin: 0;
@@ -492,6 +495,11 @@ body {
   }
   .nav-img {
     width: 125px;
+}
+.header {
+  background: url(../images/main.jpg) no-repeat center;
+  background-size: 159vw 677px;
+  display: block;
 }
 h1{
   font-weight: bolder;
@@ -668,6 +676,12 @@ h1{
 }
 .video img {
   height: 230px;
+}
+.services {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
 }
 .boximg img {
   height: 46px;
